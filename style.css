@@ -1,0 +1,820 @@
+/*Общие стили*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	
+}
+
+a {
+	transition: 0.5s;
+}
+
+
+
+h1 {
+	font-size: 330%;
+	font-weight: 100;
+	letter-spacing: 1.2px;
+	line-height: 85%;
+}
+
+h2 {
+	font-size: 150%;
+	font-weight: 100;
+}
+
+p {
+	font-size: 100%;
+}
+
+header, nav, article, div, footer {
+	display: block;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+	color: rgba(48, 51, 52, 1);
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #727677;/*сделать черным там где надо*/
+	
+}
+
+.read_more {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	background-color: rgba(161, 225, 77, 1);
+	text-align: center;
+	display: block;
+	width: 100%;
+	
+	
+	
+}
+
+.moreheader {
+	width: 230px;
+	padding: 20px 25px;
+	font-size: 140%;
+	margin-top: 5%!important;
+	margin: 0 auto;
+	
+	
+}
+
+
+
+.morecontent {
+	width: 12.5%;
+	padding: 1.5% 2%;
+	font-size: 120%;
+	margin-left: 11%;
+	margin-bottom: 10px;
+	
+	
+	
+}
+
+.moreworks {
+	background: none;
+	color: rgba(48, 51, 52, 1);
+	padding-top: 45px;
+	font-size: 120%;
+	
+}
+
+	
+	.clear:after {
+		content: "";
+		display: table;
+		clear: both;
+		
+	}
+	
+	
+	.left {
+		float: left;
+	}
+	
+	.right {
+		float: right;
+	}
+	
+
+
+/*Общие стили закончены*/
+
+header {
+	background-color: #fff;
+	
+}
+
+/*Контакты хедер топ*/
+
+
+
+.header_contact a, .header_contact p {
+	background-image: url(img/icons/icon1.jpg);
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	background-color: #fff;
+	margin-top: 1.5%;
+	margin-left: 3%;
+	font-size: 75%;
+	float: left;
+	
+}
+
+.header_contact a:first-of-type { 
+	margin-left: 5%;
+	background-position: top left;
+	
+}
+
+
+.header_contact a:nth-of-type(2) {
+	background-position: center left;
+}
+
+.header_contact p {
+	background-position: bottom left;
+	
+}
+
+
+/*Социалки*/
+
+.header_social li {
+	display: inline-block;
+	height: 46px;
+	width: 46px;
+	background-image: url(img/icons/social.jpg);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	float: right;
+	position: relative;
+	bottom: 20px;
+}
+
+@media screen and (max-width: 850px) {/*опускает социалки при сжатии*/
+	.header_social li {
+		
+		bottom: 0;
+		margin-top: 5%;}
+		
+	.header_bottom h1 {
+		top: 20px;
+	}
+	}
+
+@media screen and (max-width: 300px) {
+	/*Отодвинуть первый ярлык социалки вправо при сжатии*/
+	
+}
+
+
+.header_social .fc {
+	background-position: -5px -5px;
+	margin-right: 3%;
+}
+
+.header_social .fc:hover {
+	background-position: -5px -55px;
+	
+}
+
+.header_social .gl {
+	background-position: -55 -5px;
+}
+
+.header_social .gl:hover {
+	background-position: -55px -55px;
+}
+
+.header_social .tw {
+	background-position: -112px -3px;
+}
+
+.header_social .tw:hover {
+	background-position: -112px -53px;
+}
+
+.header_social .pr {
+	background-position: -166px -3px;
+}
+
+.header_social .pr:hover {
+	background-position: -166px -53px;
+}
+
+.header_social .ins {
+	background-position: -218px -3px;
+	
+}
+
+.header_social .ins:hover {
+	background-position: -218px -53px;
+}
+
+/*Начало мидл хедера*/
+
+.header_middle h2 {/*всякая хуйня которая масштабирует h2*/
+	margin-left: 11%;
+	margin-top: 0.5%;
+float: left;
+color: #303334;}
+	
+
+@media screen and (max-width: 850px) {/*всякая хуйня которая масштабирует h2*/
+	.header_middle h2 {
+		margin-top: -30px;
+	}
+	
+}
+
+@media screen and (max-width: 565px) {/*всякая хуйня которая масштабирует h2*/
+	.header_middle h2 {
+		margin-top: 0;
+		}
+}
+
+
+
+@media screen and (max-width: 505px) {/*всякая хуйня которая масштабирует h2*/
+	.header_middle h2 {
+		white-space: nowrap;
+		margin: 0 25%;
+		
+	}
+	
+	
+}
+
+
+.nav {
+	float: right;
+	margin-bottom: 2%;
+	
+}
+
+.nav li {
+	display: inline-block;
+	width: 8%;
+	margin-right: 40px;
+	font-size: 125%;
+	
+}
+
+
+	
+
+
+.nav a:hover,
+.moreworks:hover {
+	color: rgba(139, 225, 77, 1);
+}
+
+@media screen and (max-width: 980px) {
+
+.header_middle {
+			 padding-bottom: 3%;/*опускает хедер имг что бы меню было на белом*/
+		 }
+
+	.nav {
+		margin-top: 2%;
+		margin-left: 5%;}
+		
+	.header_bottom {/*переносит центр фото при сжатии*/
+		 background-position: 50% 50%;}
+		 
+}
+
+@media screen and (max-width: 980px) {
+	.header_middle {
+			 padding-bottom: 5%;/*опускает хедер имг что бы меню было на белом*/
+		 }
+}
+
+@media screen and (max-width: 585px) {
+	.header_middle {
+			 padding-bottom: 10%;/*опускает хедер имг что бы меню было на белом*/
+		 }
+}
+
+@media screen and (max-width: 400px) {
+	.header_middle {
+			 padding-bottom: 15%;/*опускает хедер имг что бы меню было на белом*/
+		 }
+}
+	
+	
+	
+
+@media screen and (max-width: 480px) {
+	.nav {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.nav li {
+		margin: 5px 20px;}
+	
+	
+	
+	
+}
+/*Начало боттом хедер*/
+
+.header_bottom {/*Незнаю почему, но это блять работает*/
+	
+	background-color: #727677;
+	background-image: url(img/foto/header.jpg);
+	padding-top: -1%;  /* slope */
+    height: 100%;  /* start height */
+    margin-top: 50px;
+	background-size: cover;
+	
+	
+	
+}
+
+
+.header_bottom h2 {
+	text-align: center;
+	color: #fff;
+	padding-top: 20%;
+	font-size: 0;
+}
+
+
+
+/*Сесшенс с фотками*/
+
+
+
+.step_all {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding-top: 0.5%;
+}
+
+.step_all img {
+	width: 50%;
+	height: auto;
+}
+
+
+.step1 h1,
+.step3 h1 {
+	padding: 10% 0 5% 10%;
+	color: #303334;
+}
+
+.step1 h2,
+.step3 h2 {
+	padding-left: 10%;
+	padding-bottom: 5%;
+}
+
+.step1 p,
+.step3 p {
+	padding-left: 10%;
+	width: 40%;
+	padding-bottom: 5%;
+	min-width: 250px;
+}
+
+.step2 h1{
+	padding: 10% 10% 5% 0;
+	color: #303334;
+}
+
+.step2 h2 {
+	padding-right: 10%;
+	padding-bottom: 5%;
+	
+}
+
+.step2 p {
+	padding-right: 10%;
+	width: 515px;
+	padding-bottom: 10%;
+	min-width: 250px;
+	
+}
+
+.step2 {
+	text-align: right;
+}
+
+.step2 .morecontent {/*хуйня какая то*/
+	margin-left: 55%;
+	width: 170px;
+	padding: 20px 25px;
+	font-size: 18px;
+	margin-right: 11%;
+	
+	
+}
+
+
+@media screen and (max-width: 1150px) {/*адаптивность епта---------------------------*/
+	.step_all h1 {
+		padding-top: 5%;
+		font-size: 165%;
+	}
+	
+	.step_all h2 {
+		font-size: 110%;
+		padding-bottom: 2%;
+	}
+	
+	.step2 p {
+	padding-bottom: 5%;
+	width: 415px;}
+}
+
+@media screen and (max-width: 860px) {
+	.step_all h1 {
+		padding-top: 3%;
+		font-size: 130%;
+	}
+	
+	.step_all h2 {
+		font-size: 110%;
+		padding-bottom: 2%;
+	}
+	
+	.step2 p {
+	padding-bottom: 3%;
+	width: 315px;}
+	
+	.step2 h1 {
+	margin-top: 5%;}
+	
+	.step2 h2 {
+	margin-bottom: 5%;}
+	
+	.morecontent {/*спасение кнопки, при этих параметрах она корректна----------------------*/
+	width: 150px;
+	padding: 20px 25px;
+	font-size: 16px;
+	
+	}
+	
+	
+	
+	
+
+}
+
+@media screen and (max-width: 740px) {
+	
+	.step_all img {
+		float: none;
+		display: block;
+	width: 85%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 2%;}
+}
+
+/*Начало Велком*/
+.velcome {
+	background:  linear-gradient(to right, #4fa3e2, #6ebff3, #4fa3e2);
+	
+}
+
+.velcome>p,
+.velcome>h1, 
+.velcome>h2 {
+	color: #fff;
+}
+
+.velcome h1 {
+	padding: 10% 10% 2% 10%;
+}
+
+.velcome h2 {
+	padding: 2% 10% 2% 10%;
+}
+
+.velcome p {
+	padding: 2% 10% 2% 10%;
+}
+
+/*Конец Велком*/
+
+/*Евентс*/
+.events {
+	background: linear-gradient(to right, #94cc48, #bdef61, #c5f367, #bdef61, #b3ea5a, #a6e451);
+	height: 500px;
+}
+
+body {
+	background-color: #fff;
+	background-image: url(img/foto/bad.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	
+	
+}
+/*Евентс*/
+/*Бэд*/	
+
+.bad_factor {
+	background-color: rgba(000, 000, 000, .3);
+	
+	text-align: center;
+	
+}
+
+
+
+.bad_factor>div {
+	display: inline-block;
+	width: 240px;
+	padding-top: 130px;
+	background-image: url(img/icons/icon_bad.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 10% 2% 10% 2%;
+	
+}
+
+.bad_factor p, h3 {
+color: #fff;}
+
+.Tobacco {
+	background-position: 80px 0;
+	
+}
+
+.Food {
+	background-position: -200px 0;
+}
+
+.Medications {
+	background-position: -470px 0;
+}
+
+.Age {
+	background-position: -740px 0;
+}
+
+/*Бэд*/	
+	
+/*HOW IT WORKS*/
+
+
+.work_foto {
+	background-color: #fff;
+	text-align:center;
+	
+	
+	padding:10pt;
+}
+
+.works>h1 {
+	padding: 10% 10% 2% 10%;
+	background-color: #fff;
+	color: #303334
+}
+
+
+
+
+.WORK {/*неровно потому что центрирует с разным количеством текста. нужно центрировать фото/ впизду центрирвать фото, задал блокам одинаковую высоту*/
+	margin:10pt;
+	padding:10pt;
+	width:370px;
+	display:inline-block;
+	vertical-align: top;
+
+	}
+	
+.works img {
+	width: 100%;
+	margin: 0 0 40px 0;
+	
+}
+
+.works h2 {
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 840px) {/*Растягивает когда 3 уже не влазит*/
+	.WORK {
+		width: 85%;
+	}
+	
+	}
+	
+.works,
+.works img {
+	
+box-shadow:0 0 10pt #727272;
+}
+
+/*фУТЕР*/
+
+.footer_top {
+	background-color: #fff;
+	text-align: center;
+	
+	
+	
+}
+
+.about h3,
+.news h3,
+.contacts h3 {
+	padding: 150px 0 65px 0;
+	font-size: 250%;
+	font-weight: 100;
+	color: #727677;
+	
+}
+
+.footer_top>div {
+	display: inline-block;
+	width: 350px;
+	vertical-align: top;
+	text-align: left;
+	margin: 0 2% 1% 2%;
+	padding: 0 2% 1% 2%;
+}
+
+
+@media screen and (max-width: 1220px) {
+	.footer_top>div {
+	margin: 0 1% 1% 1%;
+	padding: 0 1% 1% 1%;
+	width: 30%;}
+	
+	
+.about h3,
+.news h3,
+.contacts h3 {
+	padding: 100px 0 35px 0;
+	font-size: 200%;}
+}
+
+@media screen and (max-width: 690px) {
+	.footer_top>div {
+		width: 100%;
+	}
+	
+	.about h3,
+	.news h3,
+	.contacts h3 {
+	padding: 25px 0 10px 0;
+	font-size: 150%;}
+}
+}
+
+
+.date {
+	font-size: 75%;
+}
+
+
+
+h4 {
+	padding: 10px 0 15px 0;
+}
+
+hr {
+	margin: 30px 0 30px 0;
+}
+
+
+.contacts p{
+	padding-left: 30px;
+	background-image: url(img/icons/icon2.jpg);
+	background-repeat: no-repeat;
+}
+
+.contacts p:first-of-type {
+	background-position: top left;
+	
+}
+
+.contacts p:last-of-type {
+	background-position: bottom left;
+	
+}
+
+
+/*footer_bottom*/
+
+.footer_bottom {
+	padding: 5% 5% 5% 10%;
+	background-color: #fff;
+	font-size: 80%;
+}
+
+
+/*Анимация h1*/
+
+@keyframes head1 {
+	
+	0% {opacity: 0;}
+	
+	5% {opacity: 1;}
+	
+	40% {opacity: 1;}
+	
+	45% {opacity: 0;}
+	
+	
+	100% {opacity: 0;}
+}
+
+@keyframes head2 {
+	
+	45% {opacity: 0;}
+	
+	50% {opacity: 1;}
+	
+	65% {opacity: 1;}
+	
+	70% {opacity: 0;}
+	
+	
+	100% {opacity: 0;}
+}
+
+@keyframes head3 {
+	
+	70% {opacity: 0;}
+	
+	75% {opacity: 1;}
+	
+	90% {opacity: 1;}
+	
+	98% {opacity: 0;}
+	
+	
+	100% {opacity: 0;}
+}
+
+
+
+.header_bottom h1 {
+	opacity: 0;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	position: absolute;
+	top: 55%;
+	left: 20%;
+	right: 20%;
+	display: block;
+	text-align: center;
+	color: #fff;
+}
+
+.header_bottom>h2 {/*распорка для море, так как р1 теперь абсолют*/
+	font-size: 50px;
+	color: transparent;
+	user-select: none;
+}
+
+
+.header_bottom h1:nth-of-type(1) {
+	animation-name: head1;
+}
+
+.header_bottom h1:nth-of-type(2) {
+	animation-name: head2;
+}
+
+.header_bottom h1:nth-of-type(3) {
+	animation-name: head3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
